@@ -1,0 +1,381 @@
+/*ESTA ES UNA REGLA QUE NOS PERMITE IMPRTAR FUENTES EXTERNAS*/
+@font-face{ 
+	font-family: "CaviarDreams";
+	src: url("fonts/CaviarDreams.ttf");
+}
+
+@font-face{ 
+	font-family: "KeepCalm-Medium";
+	src: url("fonts/KeepCalm-Medium.ttf");
+}
+
+@font-face{ 
+	font-family: "finger";
+	src: url("fonts/finger.ttf");
+}
+
+@font-face{ 
+	font-family: "yanone";
+	src: url("fonts/yanone.ttf");
+}
+
+/*MAQUETACION GENERAL*/
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	font-family: "CaviarDreams";
+	font-size: 20px;
+	background: url("../img/wheat.png");
+	background-attachment: fixed; /*para que el fondo se quede fijo*/
+}
+
+.clearfix{
+	float: none;
+	clear: both;
+}
+
+/*Barra de navegacion / header*/
+
+header{
+	display: block;
+	width: 100%;
+	height: 90px;
+	background: rgba(211,177,156, 0.83);
+	position: fixed;
+	text-transform: uppercase;
+}
+
+header ul{
+	display: block;
+	width: 750px;
+	height: inherit;
+	margin: 0px auto;
+	margin-top: -3px;
+
+}
+
+header ul li{
+	display: inline-block;
+	margin: 0px auto;
+	text-align: center;
+	line-height: 90px;
+}
+
+header a{
+	display: block;
+	padding-right: 20px;
+	padding-left: 20px;
+	height: inherit;
+	text-decoration: none;
+	color: rgb(71,69,72);
+	transition: all 300ms;
+	margin-bottom: -10px;
+}
+
+/*hover del menu / animacion */
+
+header a:hover,
+.actived{
+	background: rgba(27, 49, 66, 0.8);
+	color: rgb(228,208,195);
+}
+
+/*maquetacion del logotipo = AM*/
+
+#logo{
+	font-family: "CaviarDreams_Italic";
+	font-size: 30px;
+}
+
+#logo a{
+	transition: color 500ms, transform 500ms;
+}
+/*este paso es para que no tenga ningun efecto el AM que esta en la barra de navegacion*/
+header #logo a:hover{
+	background: transparent;
+	color: rgb(71,69,72);
+	transform: scale(1.50,1.50);
+}
+
+/*Contenedor principal*/
+
+#content{
+	min-height: 550px; 
+	height: auto;
+	width: 75%;
+	margin: 0px auto;
+	box-shadow: 0px 0px 40px black;
+	border-left: 1px solid #b7b7b7;
+	border-right: 1px solid #b7b7b7;
+	background: rgba(228,208,195, 0.85); 
+	padding-top: 130px; 
+}
+
+/*Footer*/
+
+footer{
+	width: 75%;
+	margin: 0px auto;
+	background: rgba(228,208,195, 0.85); 
+	box-shadow: 0px 0px 40px black;
+	margin-top: 2%;
+	border-left: 1px solid #b7b7b7;
+	border-right: 1px solid #b7b7b7;
+	color: rgba(27, 49, 66);
+	font-family: "titilium";
+
+}
+
+/*Maquetacion de la pagina about me*/
+
+#title{
+	width: 70%;
+	margin: 0px auto;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 85px;
+
+}
+
+#title h1{
+	font-family: "CaviarDreams_Italic";
+	font-size: 40px;
+	border-bottom: 2px solid #b88481;
+	color: rgba(27, 49, 66, 0.9);
+
+}
+
+#title h3{
+	font-size: 25px;
+	font-family: "titilium";
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-top: 18px;
+	color: rgba(27, 49, 66, 0.9);
+
+}
+ #title p{
+ 	font-family: "titilium";
+ 	font-size: 18px;
+ 	color: rgba(27, 49, 66, 0.9);
+ 	margin-top: 5px;
+ }
+
+ article.about{
+ 	width: 70%;
+ 	margin: 0px auto;
+ 	margin-bottom: 20px;
+ 	font-size: 20px;
+ 	font-family: "titilium";
+
+ }
+
+ .about h1{
+ 	border-bottom: 2px solid #b88481;
+ 	font-size: 30px;
+ 	font-family: "titilium";
+ 	color: rgba(27, 49, 66, 0.9);
+ 	padding-bottom: 5px;
+ 	margin-bottom: 5px;
+
+
+ }
+
+ .about p{
+ 	padding-top: 20px;
+ 	padding-bottom: 40px;
+ 	text-align: justify;
+ 
+ }
+
+ /*Maquetacion del formulario en la parte de create project*/
+
+ .container{
+ 	padding: 50px;
+ 	padding-top: 10px;
+ 	font-family: "CaviarDreams";
+
+ }
+
+ .container .imagen img{
+ 	width: 300px;
+	height: 200px;
+	float: left;
+
+ }
+
+ .container .data {
+ 	float: left;
+ 	width: 49%;
+ 	margin-left: 30px;
+ 	color: rgb(71,69,72);
+ }
+
+
+ .container h2{
+ 	display: block;
+ 	border-bottom: 2px solid #b88481;
+ 	padding-bottom: 10px;
+ 	margin-bottom: 15px;
+ 	color: rgba(27, 49, 66, 0.9);
+ }
+
+
+ form{
+ 	width: 80%;
+ }
+
+ form label{
+ 	display: block;
+ 	width: 100%;
+ 	margin-top: 15px;
+ 	margin-bottom: 5px;
+ }
+
+ form input[type="text"],
+ form input[type="number"],
+ form input[tupe="email"],
+ form textarea{
+ 	width: 50%;
+ 	padding: 5px;
+ }
+
+ form button,
+ form input[type="submit"],
+ .button-edit,
+ .button-delete{
+ 	display: block;
+ 	font-size: 18px;
+ 	font-family: "CaviarDreams";
+ 	padding: 8px;
+ 	width: 80px;
+ 	margin-top: 15px;
+ 	color:#b88481;
+ 	background: rgba(27, 49, 66, 0.9);
+ 	border: 1px solid rgba(27, 49, 66, 0.9);
+ 	cursor: pointer;
+ }
+
+ /*Parte de la maquetacion de la pagina de detail*/
+ .button-edit,
+ .button-delete{
+ 	width: 30%;
+ 	text-align: center;
+ 	float: left;
+ 	margin-right: 10px;
+ 	text-decoration: none;
+ }
+
+ form input[disabled]{
+ 	cursor: not-allowed;
+
+ }
+
+ form button:hover,
+ form input[type="submit"]:hover{
+ 	background: rgba(211,177,156, 0.83);
+ 	color: rgb(27, 49, 66);
+ 	border: 1px solid rgba(27, 49, 66, 0.9);
+ 	
+ }
+
+ .form_error{
+ 	background: rgba(71,69,72);
+ 	color: rgb(228,208,195);
+ 	margin-left: 5px;
+ 	padding: 1px;
+ }
+
+ /*Estilos del mensaje de "project success or failed" */
+
+ .message{
+ 	width: 70%;
+ 	padding: 5px;
+ }
+
+ .success{
+ 	color: rgb(228,208,195);
+ 	background: rgb(84,82,85);
+ 	border: 1px solid rgb(84,82,85);
+ }
+
+ .success a{
+ 	color: rgb(228,208,195);
+
+ }
+
+ .failed{
+ 	color: rgba(84,82,85);
+ 	background: rgb(228,208,195);
+ 	border: 1px solid rgb(228,208,195); 
+
+ }
+
+/*Maquetacion pagina de my projects*/
+
+.project{
+	list-style: none;
+	display: block;
+	float: left;
+	width: 28%;
+	text-align: center;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 30px;
+
+
+}
+
+.image{
+	width: 100%;
+	height: 150px;
+	overflow: hidden;
+	margin: -1px;
+
+
+}
+.project img{
+	width: 100%;
+
+}
+
+.project a{
+	text-decoration: none;
+	color: rgb(71,69,72);
+}
+
+/*Pagina de detail. mensaje de confimacion*/
+
+.confirm{
+	display: block;
+	background: rgb(71,69,72);
+	color: rgb(228,208,195);
+	font-family:  "KeepCalm-Medium";
+	padding: 6px;
+	margin-top: 30px;
+}
+
+/*Pagina de contacto*/
+.contact{
+	width: 35%;
+	height: 20%;
+	color: rgb(71,69,72);
+	position: right;
+	font-size: 28px;
+	margin-top: 10%;
+	margin-left: 25%;
+}
+
+.imagenes img{
+ 	width: 10%;
+	height: 10%;
+	float: left;
+}
+ 
+
+
+
